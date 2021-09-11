@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pets for adoption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="contact">
+    <div class="main-header"></div>
+
+<header>
+<div class="main-header">
+    <div class="title">
+        <h1>Local Pet Adoption Service</h1>
+    </div>
+<nav>
+    <div class="main-menu">
+        <ul>        
+            <li><a href="index.html">About Us</a></li>
+            <li><a>Gallery</a></li>
+            <li><a href= "Donate.html">Donate & Volunteer</a></li>
+            <li class="active"><a href="ContactUs.html">Contact us</a></li>
+         </ul>
+    </div>
+</nav>
+</header>
+
+
+
+<main>
+
+    <h2 Align="center" style="color: maroon;">Contacting Us</h2>
+    <p></p>
+    <h3 style="color:forestgreen;">Phone:</h3>
+    <p>(949)0000000</p>
+    <h3 style="color:forestgreen;">Email:</h3>
+    <p>helpanimals@shelter.com</p>
+    <h3 style="color:forestgreen;">Our Office Hour:</h3>
+    <p>Monday-Friday:9am-4pm</p>
+    <p>Weekend:10am-5pm</p>
+    
+         
+    <form action="/contact" method="post">
+        <fieldset >
+            <legend><h3>Adopt a shelter animal today!</h3></legend>
+            <label>Enter your full name</label>
+            <input type="text" name="name">
+            <label>Enter your email</label>
+            <input type="email" name="email">
+            <label>Enter your phone</label>
+            <input type="text" name="phone">
+            <label>Which city are you located in?</label>
+            <input type="text" name="city">
+            <label>How should we contact you?</label>
+            <input type="radio" name="method" value="Email"/>Email
+            <input type="radio" name="method" value="Phone"/>Phone 
+            <label>When should we contact you?</label>
+            <input type="radio" name="time" value="Morning"/>Morning 
+            <input type="radio" name="time" value="Afternon"/>Afternoon 
+            <input type="radio" name="time" value="Evening"/>Evening 
+            <input type="radio" name="time" value="no preference"/>No Preference
+            <label>Which Animal are you interested in</lable>
+            <select>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Others</option>
+            </select>
+            <label>Anything you want us to know? </label>
+            <textarea></textarea>
+            <input type="submit" value="sumbit">
+        </fieldset>
+    </form>
+    </main>
+
+<section>
+        <ul id="animals">
+            <li class="animal"><img src="images/cat2.jpg"></li>
+            <li class="animal"><img src="images/dog1.jpg"></li>
+            <li class="animal"><img src="images/other1.jpg"></li>
+            <li class="animal"><img src="images/other2.jpg"></li>
+            <li class="animal"><img src="images/dog2.jpg"></li>
+        </ul>
+</section>
+
+<footer>
+    <div id="nondisclaimer">
+        <div class="copy">&copy;Copyright 2021::Petsforadoption.com</div>
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div>
+   
+</footer>
+
+</body>
+</html>
