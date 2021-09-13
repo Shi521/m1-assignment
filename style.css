@@ -315,3 +315,19 @@ td:first-child{
     font-weight:bold;
     background:#f1943cc0;
 }
+
+/*Gallery*/
+.big_container {
+  width: 1300px;
+  height: 600px;
+  display:block;
+  box-sizing: border-box;
+  position:display;
+  padding-left: 200px;
+}
+.big_container img{
+  border: 3px solid #125688;
+  display: inline;
+}
+
+
