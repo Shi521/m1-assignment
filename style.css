@@ -338,6 +338,26 @@ section #pictures #gallery img {
 }
 section #pictures #gallery p{
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
+  text-transform:uppercase;
+}
+
+section #pictures #gallery .desc{
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  bottom: 190px;
+  left: 70px;
+  text-align: center;
+  padding-top: 20px;
+  background-color:rgb(255, 255, 255, 0.8)
+}
+sectio #pictures li{
+  float:left;
+  position: relative;
+}
+section #pictures #gallery li:hover .desc{
+  visibility: visible;
+
 }
