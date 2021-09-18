@@ -31,24 +31,32 @@
     </header>
 
     <main>
-        <h2 Align="center" style="color:blueviolet">Meet our Animals</h2>
-        <p>Animal shelters and rescue centers around the world have devoted countless hours of work to these abused or homeless animals. We are also committed to helping these stray animals find a happy home. Stray animals on the street often find it difficult to survive due to hygiene and diet difficulties. Today is a good opportunity for us to get to know these rescued stray animals.</p>
-        <container class="big_container">
-            <div class="img_holder">
-              <img src="images/gallery-1.jpg" style="height: 200px;" >
-              <img src="images/gallery-6.jpg" style="width: 300px" >
-              <img src="images/gallery-2.jpg" style="width: 250px">
-              <img src="images/gallery-4.jpg" style="width:300px">
-              <img src="images/gallery-5.jpg" >
-              <img src="images/gallery-7.jpg" >
-              <img src="images/gallery-3.jpg" style="width: 250px">
-              <img src="images/gallery-8.jpg" style="width: 250px">
-              <img src="images/gallery-9.jpg" style="width: 250px">
-              <img src="images/gallery-10.jpg" style="height: 150px">
-            </div>
-        </container>    
+      <h2 align="center" style="color: blueviolet">Meet our Animals</h2>
+      <p>
+        Animal shelters and rescue centers around the world have devoted
+        countless hours of work to these abused or homeless animals. We are also
+        committed to helping these stray animals find a happy home. Stray
+        animals on the street often find it difficult to survive due to hygiene
+        and diet difficulties. Today is a good opportunity for us to get to know
+        these rescued stray animals.
+      </p>
     </main>
-
+    <section>
+      <ul id="pictures">
+      <!--<li id="gallery"><img id="photo" src="images/gallery1.jpg" alt="Dog"><p>This is a dog</p></li>
+      <li id="gallery"><img id="photo1" src="images/gallery2.jpg" ></li>
+      <li id="gallery"><img id="photo2" src="images/gallery3.jpg" ></li>
+      <li id="gallery"><img id="photo3" src="images/gallery4.jpg" ></li>
+      <li id="gallery"><img id="photo4" src="images/gallery5.jpg" ></li>
+      <li id="gallery"><img id="photo5" src="images/gallery6.jpg" ></li>
+      <li id="gallery"><img id="photo6" src="images/gallery7.jpg" ></li>
+      <li id="gallery"><img id="photo7" src="images/gallery8.jpg" ></li>
+      <li id="gallery"><img id="photo8" src="images/gallery9.jpg" ></li>
+      <li id="gallery"><img id="photo9" src="images/gallery10.jpg"></li>
+      <li id="gallery"><img id="photo10" src="images/gallery11.jpg"></li>
+      <li id="gallery"><img id="photo11" src="images/gallery12.jpg"></li>-->
+      </ul>
+    </section>
     <footer>
       <div id="nondisclaimer">
         <div class="copy">&copy;Copyright 2021::Petsforadoption.com</div>
@@ -59,5 +67,29 @@
         </div>
       </div>
     </footer>
+
+    <script id="pictures" id="gallery">
+      var photos = [];
+      var fileNames = [];
+      var imageList = [];
+      var image;
+      var openList = "<li id='gallery'>";
+      var closeList = "</li>";
+      var captionList = ["Meet Lucy!","Are you looking at me :)","Best Friend Forever","Time for food","Hi!Bunny!","Don't push!","Awww","Gimme Food","Hi!Human!","Smile :)","Squeezeee","Hola!"]
+      var openCaptionTag = "<p>"
+      var closeCaptionTag ="</p>"
+      for (var i = 0; i < 12; i++) {
+        fileNames.push("gallery" + (i + 1));
+        photos.push("<img src='images/" + fileNames[i] + ".jpg' alt='"+ captionList[i]+ " ' >");
+        image = openList + photos[i] + openCaptionTag + captionList[i] + closeCaptionTag + closeList;
+        imageList.push(image);
+      }
+      console.log(imageList);
+      document.getElementById("pictures").innerHTML = imageList;
+
+  
+  
+
+    </script>
   </body>
 </html>
