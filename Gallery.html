@@ -80,12 +80,12 @@
       var closeCaptionTag ="</p>";
       var openDescTag = "<div class='desc'><span>";
       var closeDescTag = "</span></div>"
-      var descList =[" This is Lucy. She's 3y now!","Say hi to Maddy!","These two cuties always stay together.","It's meal time! Can't wait to get food!","Our cute bunny-'little white' is always so white and clean.","Sometimes, when it gets too crowded in the cage.","They enjoy taking nap together!", "Carrots and broccolis are their fav.","Sorry for always keep staring at you lol.","Smile! and everything will be fine!","It's comfy when everyone stays together","Do you like my hair style?"]
+      var descList =[" This is Lucy. She's 3y now! ","Say hi to Maddy! She loves to look at people.","These two cuties always stay together.","It's meal time! Can't wait to get food!","Our bunny-'little white' is always white and clean.","Sometimes, when it gets too crowded in the cage.","They enjoy taking nap together!", "Carrots and broccolis are their fav.","Sorry for always keep staring at you lol.","Smile! and everything will be fine!","It's comfy when everyone stays together","Do you like my hair style?"]
 
       for (var i = 0; i < 12; i++) {
         fileNames.push("gallery" + (i + 1));
         photos.push("<img src='images/" + fileNames[i] + ".jpg'>") ;
-        image = openList  + photos[i] + openCaptionTag + captionList[i] + openDescTag + descList[i] + closeDescTag + closeCaptionTag + closeList;
+        image = openList  + photos[i] + openCaptionTag + captionList[i] + closeCaptionTag + openDescTag + descList[i] + closeDescTag + closeList;
         imageList.push(image);
       }
       
