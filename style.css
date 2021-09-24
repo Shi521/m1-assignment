@@ -329,13 +329,14 @@ section #pictures {
 }
 section #pictures #gallery {
   display: inline-block;
-  width: 250px;
-  
+  /*width: 250px;*/ 
   text-align: center;
+  position:relative;
 }
 section #pictures #gallery img {
-  width: 230px;
+  width: 400px;
   padding: 1em 2em;
+  margin: 0 20px;
   display: inline-block;
 }
 section #pictures #gallery p{
@@ -346,14 +347,13 @@ section #pictures #gallery p{
 }
 
 #gallery li .desc{
-  width: 170px;
-  height: 60px;
-  position: relative;
+  width: 200px;
+  position: absolute;
   visibility: hidden;
   bottom: 190px;
-  left: 70px;
+  left: 150px;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px;
   background-color:rgb(255, 255, 255, 0.8)
 }
 #gallery li:hover {
