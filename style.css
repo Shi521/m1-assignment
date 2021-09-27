@@ -81,7 +81,7 @@ main {
 main h1 {
   text-align: center;
 }
-main p {
+main .galleryparagraph {
   color: #ff7300;
   font-size: 16px;
   text-align: center;
@@ -366,23 +366,32 @@ section #pictures #gallery p{
 #gallery li:hover .desc{
   visibility: visible;
 }
-
+#gallery{
+  position: relative;
+}
 #popup { 
-background-color: white;
+background-color:black;
 position:absolute;
-width: 100px;
+top:500px;
+left: 500px;
+width: 400px;
+width: 40%;
+height: 300px;
 text-align: center;
 visibility: hidden;
-border:4px solid #125688;
+border:2px solid #125688;
+opacity: 70%;
 }
 #popup #heading{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size:20px;
+  font-size:40px;
+  color: white;
 }
 #popup #textinfo{
   font-family: 'Times New Roman', Times, serif;
-  font-size:15px;
+  font-size:20px;
+  color: white;
 }
 #popup #textlink{
   color:yellow;
