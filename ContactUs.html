@@ -4,6 +4,7 @@
     <title>Pets for adoption</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body id="contact">
@@ -46,15 +47,18 @@
             <legend><h3>Application</h3></legend>
             <label>Enter your full name</label>
             <input type="text" name="name">
-            <label>Enter your email</label>
-            <input type="email" name="email">
-            <label>Enter your phone</label>
-            <input type="text" name="phone">
             <label>Which city are you located in?</label>
             <input type="text" name="city">
             <label>How should we contact you?</label>
-            <input type="radio" name="method" value="Email"/>Email
-            <input type="radio" name="method" value="Phone"/>Phone 
+            <select onchange="contact()" id="info">
+                <option>select one</option>
+                <option value="email">email</option>
+                <option value="phone">phone</option>
+            </select>
+            <div id="method" style="display:none">
+                <label id="methodlabel"></label>
+                <input type="text">
+            </div>
             <label>When should we contact you?</label>
             <input type="radio" name="time" value="Morning"/>Morning 
             <input type="radio" name="time" value="Afternon"/>Afternoon 
@@ -94,6 +98,6 @@
     </div>
    
 </footer>
-
+<script src="contactUs.js"></script>
 </body>
 </html>

@@ -354,7 +354,7 @@ section #pictures #gallery p{
   left: 150px;
   text-align: center;
   padding: 20px;
-  background-color:rgb(255, 255, 255, 0.8)
+  background-color:rgb(255, 255, 255, 0.8);
 }
 #gallery li:hover {
   cursor: pointer;
@@ -365,5 +365,26 @@ section #pictures #gallery p{
 } */
 #gallery li:hover .desc{
   visibility: visible;
+}
 
+#popup { 
+background-color: white;
+position:absolute;
+width: 100px;
+text-align: center;
+visibility: hidden;
+border:4px solid #125688;
+}
+#popup #heading{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:20px;
+}
+#popup #textinfo{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:15px;
+}
+#popup #textlink{
+  color:yellow;
+  cursor:pointer;
 }

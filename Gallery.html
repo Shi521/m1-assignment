@@ -56,7 +56,13 @@
       <li id="gallery"><img id="photo10" src="images/gallery11.jpg"></li>
       <li id="gallery"><img id="photo11" src="images/gallery12.jpg"></li>-->
       </ul>
+      <div id="popup">
+        <div id="heading">Caption</div>
+        <div id="textinfo">Discription</div>
+        <p id="textlink">Botton</p>
+      </div>
     </section>
+  
     <footer>
       <div id="nondisclaimer">
         <div class="copy">&copy;Copyright 2021::Petsforadoption.com</div>
@@ -68,32 +74,6 @@
       </div>
     </footer>
 
-    <script>
-      var photos = [];
-      var fileNames = [];
-      var imageList = [];
-      var image;
-      var openList = "<li id='gallery'>";
-      var closeList = "</li>";
-      var captionList = ["Yawnnnn!","Are you looking at me :)","Best Friend Forever","Time for food","Hi!Bunny!","Don't push!","Awww","Gimme Food","Hi!Human!","Smile :)","Squeezeee","Hola!"]
-      var openCaptionTag = "<p>";
-      var closeCaptionTag ="</p>";
-      var openDescTag = "<div class='desc'><span>";
-      var closeDescTag = "</span></div>"
-      var descList =[" This is Lucy. She's 3y now! ","Say hi to Maddy! She loves to look at people.","These two cuties always stay together.","It's meal time! Can't wait to get food!","Our bunny-'little white' is always white and clean.","Sometimes, when it gets too crowded in the cage.","They enjoy taking nap together!", "Carrots and broccolis are their fav.","Sorry for always keep staring at you lol.","Smile! and everything will be fine!","It's comfy when everyone stays together","Do you like my hair style?"]
-
-      for (var i = 0; i < 12; i++) {
-        fileNames.push("gallery" + (i + 1));
-        photos.push("<img src='images/" + fileNames[i] + ".jpg'>") ;
-        image = openList  + photos[i] + openCaptionTag + captionList[i] + closeCaptionTag + openDescTag + descList[i] + closeDescTag + closeList;
-        imageList.push(image);
-      }
-      
-      document.getElementById("pictures").innerHTML = imageList.join("");
-
-  
-  
-
-    </script>
+    <script src="gallery.js"></script>
   </body>
 </html>
