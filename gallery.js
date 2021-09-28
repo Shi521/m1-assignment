@@ -2,7 +2,7 @@ var photos = [];
 var fileNames = [];
 var imageList = [];
 var image;
-var openList = "<li id='gallery'>";
+var openList = "<li id='gallerylist'>";
 var closeList = "</li>";
 var captionList = [
   "Yawnnnn!",
