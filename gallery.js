@@ -43,12 +43,12 @@ for (var i = 0; i < 12; i++) {
   fileNames.push("gallery" + (i + 1));
   photos.push("<img src='images/" + fileNames[i] + ".jpg'>");
   image =
-    openList +
+    openList + 
     photos[i] +
     openCaptionTag +
     captionList[i] +
     closeCaptionTag +
-    openDescTag + /*"value=" + i + ">" +*/ i +")'>" +
+    openDescTag + i +")'>" +
     descList[i] +
     closeDescTag +
     closeList;
@@ -76,3 +76,23 @@ function popWindow(i){
 function hideInfo(){
     document.getElementById("popup").style.visibility="hidden";
 }
+
+$(document).ready(function(){
+
+  /* Open lightbox on button click */
+  $('#pictures li img').click(function(){
+      $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+      $('.box').fadeIn();
+      if ($('.box').contents('img')) {
+        $('.box').contents().remove('img'); 
+    }
+    var img = $(this).clone(); 
+    $('.box').append(img);
+  })
+  $('.close, .backdrop').click(function(){
+    $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+        $('.backdrop').css('display', 'none');
+    });
+    $('.box').fadeOut();
+});
+})
